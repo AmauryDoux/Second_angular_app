@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoApp">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="assets/css/hat.css">
+</head>
+<body>
+
+    <header></header>
+    <ui-view></ui-view>
+    <!--On inclu angular en premier-->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <!--On inclu le router dont angular se servira-->
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!--On inclu notre application-->
+    <script src="./app.js"></script>
+    <!--On inclu les components dont notre application se sert-->
+    <script src="./app/components/editPage/editPage.js"></script>
+    <script src="./app/components/home/home.js"></script>
+    <script src="./app/components/header/header.js"></script>
+    <script src="./app/components/todoElement/todoElement.js"></script>
+    <script src="./app/components/search/search.js"></script>
+    <!--On inclu aussi tout les service custom-->
+    <script src="./app/services/todoElement.factory.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<div>
+    <input type="text" ng-model="$ctrl.number">
+    <div>{{$ctrl.number}}</div>
+    <div ng-if="$ctrl.number % 2">Is Od!</div>
+    <div ng-show="$ctrl.number % 2 === 0">Is Even!</div>
+    <div ng-hide="$ctrl.number % 2">Je suis un nombre pair!</div>
+    <div ng-class="{isOdd: $ctrl.number % 2}">CustomClass</div>
+    <div ng-class="$ctrl.number % 2 ? 'isOdd' : 'isEven'">CustomClass</div>
+</div>

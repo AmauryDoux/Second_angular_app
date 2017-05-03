@@ -1,0 +1,6 @@
+<div ng-repeat="link in $ctrl.links">
+    <a  ui-sref="{{link}}"
+        ui-sref-active="active">
+        {{link.toUpperCase()}} page!
+    </a>
+</div>
